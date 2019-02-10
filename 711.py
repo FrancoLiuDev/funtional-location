@@ -48,9 +48,9 @@ for index, city in enumerate(city):
     res = requests.post(
         'http://www.ibon.com.tw/retail_inquiry_ajax.aspx', data=data)
 
-    with open('log.txt', 'w+') as logfile:
-        logfile.write(res.text.encode('utf8'))
-        logfile.close()
+    # with open('log.txt', 'w+') as logfile:
+    #     logfile.write(res.text.encode('utf8'))
+    #     logfile.close()
     # 第一次迴圈建立dataframe，並將城市填入。資料的形式是table，所以直接使用read_html快速拿下!
 
     if index == 0:
